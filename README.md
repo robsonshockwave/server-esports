@@ -28,3 +28,49 @@ npm i ts-node-dev -D
 
 in tsconfig.json change
 `"module": "ES2020",` for `"module": "CommonJS",`
+
+npm i prisma -D
+
+npx prisma init -h
+
+npx prisma init --datasource-provider SQLite
+
+after created table in schema.prisma
+npx prisma migrate dev
+
+npx prisma studio
+
+whenever create a table in prism run
+npx prisma migrate dev
+
+---
+
+# Back-end
+
+## Entidades
+
+### Game
+
+id
+title
+bannerUrl
+
+### Ad
+
+id
+gameId
+name
+yearsPlaying
+discord
+weekDays
+hourStart
+hourEnd
+useVoiceChannel
+createdAt
+
+## Casos de uso
+
+- Listagem de games com contagem de anúncios
+- Criação de novo anúncio
+- Listagem de anúncios por game
+- Buscar discord pelo ID do anúncio
