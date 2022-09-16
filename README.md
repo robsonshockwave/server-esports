@@ -22,7 +22,7 @@ npm i @types/express -D
 
 npm i ts-node-dev -D
 
-`"dev": "tsnd src/server.ts"`
+`"dev": "tsnd --exit-child src/server.ts"`
 
 -> delete `"type": "module",`
 
@@ -42,6 +42,15 @@ npx prisma studio
 
 whenever create a table in prism run
 npx prisma migrate dev
+
+npm i @prisma/client
+
+after modifying the schema and having installed the lib from above
+npx prisma generate
+
+npm i cors
+
+npm i @types/cors
 
 ---
 

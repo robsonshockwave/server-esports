@@ -5,7 +5,7 @@
   "main": "src/server.mjs",
   "scripts": {
     "build": "tsc",
-    "dev": "tsnd src/server.ts"
+    "dev": "tsnd --exit-child src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   "homepage": "https://github.com/robsonshockwave/server-esports#readme",
   "dependencies": {
     "@prisma/client": "^4.3.1",
+    "@types/cors": "^2.8.12",
+    "cors": "^2.8.5",
     "express": "^4.18.1"
   },
   "devDependencies": {
